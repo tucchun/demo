@@ -1,0 +1,437 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+ul,
+li,
+dl,
+dd,
+dt {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*工具*/
+
+.icon {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.affix {
+  position: fixed;
+}
+
+
+/*滚动条样式*/
+
+
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #f5f5f5;
+}
+
+
+/*定义滚动条的轨道，内阴影及圆角*/
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  border-radius: 2.5px;
+  background-color: #f5f5f5;
+}
+
+
+/*定义滑块，内阴影及圆角*/
+
+.scrollbar::-webkit-scrollbar-thumb {
+  /*width: 10px;*/
+  height: 10px;
+  border-radius: 2.5px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+
+/*页面布局样式*/
+
+html,
+body {
+  background: #ccc;
+  height: 100%;
+  width: 100%;
+  padding: .2rem;
+}
+
+body {
+  max-width: 19.2rem;
+  margin: auto;
+}
+
+body * {
+  max-width: 19.2rem;
+}
+
+.container {
+  /*width: 19.2rem;*/
+  margin: 0 auto 0 auto;
+  /*height: 10.8rem;*/
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #0b1128;
+  overflow: hidden;
+  color: #fff;
+}
+
+.header {
+  height: 1.4rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  background: #0b1128;
+  border-bottom: 1px solid #345897;
+}
+
+.menu {
+  width: 1.6rem;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding: 1.4rem 0 0 0;
+  z-index: 999;
+  border-right: 1px solid #345897;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 1.4rem 0 0 1.6rem;
+  /*border: 1px solid #ccc;*/
+}
+
+
+/*头部*/
+
+.header-left {
+  height: 100%;
+  position: relative;
+}
+
+.head-logo {
+  display: inline-block;
+  width: 1.03rem;
+  height: .99rem;
+  position: absolute;
+  top: 50%;
+  margin: -0.499rem 0 0 .35rem;
+}
+
+.head-logo > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*菜单*/
+
+.menu-icon {
+  display: inline-block;
+  width: .45rem;
+  height: .45rem;
+}
+
+.menu-icon > img {
+  width: 100%;
+  height: 100%;
+}
+
+ul.menu-list,
+ul.menu-list>li.menu-item,
+li.menu-item>dl,
+li.menu-item>dl>dt,
+li.menu-item>dl>dd {}
+
+ul.menu-list {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+li.menu-item {
+  position: relative;
+  cursor: pointer;
+}
+
+li.menu-item>dl {
+  list-style: none;
+  padding: .3rem 0;
+}
+
+li.menu-item>dl>dt {}
+
+li.menu-item>dl>dd {
+  font-size: .2rem;
+  /*margin: .12rem 0 0 0;*/
+  text-align: center;
+  color: #fff;
+}
+
+li.menu-item.active div.bg,
+li.menu-item:hover div.bg {
+  height: 100%;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: .2;
+}
+
+li.menu-item>dl>dd a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hover {
+  display: none;
+}
+
+li.menu-item.active .menu-icon,
+li.menu-item:hover .menu-icon {
+  width: .46rem;
+  height: .46rem;
+}
+
+li.menu-item.active dd,
+li.menu-item:hover dd {
+  font-size: .21rem;
+}
+
+li.menu-item.active .hover,
+li.menu-item:hover .hover {
+  display: inline-block;
+}
+
+li.menu-item.active .default,
+li.menu-item:hover .default {
+  display: none;
+}
+
+
+/*模块首页*/
+
+.module-index {
+  width: 100%;
+  height: 100%;
+}
+
+
+/*二级菜单*/
+
+.tab-list,
+.tab-item {}
+
+.tab-inner {
+  padding: 0 .2rem;
+}
+
+.tab-list {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-item {
+  display: inline-block;
+  /*float: left;*/
+  font-size: .2rem;
+  height: .44rem;
+  line-height: .44rem;
+  vertical-align: middle;
+  border-bottom: 3px solid #fff;
+}
+
+.tab-item.active {
+  border-bottom-color: #3385ff;
+  color: #3385ff;
+}
+
+
+/*导航*/
+
+.nav-inner,
+.nav-item {}
+
+.nav-inner {
+  margin: .2rem .2rem 0 .2rem;
+}
+
+.nav-item {
+  float: left;
+  font-size: .18rem;
+  padding: 0 .025rem;
+}
+
+.nav-item>a {
+  text-decoration: none;
+}
+
+
+/*所有报警*/
+
+.module-one-left {
+  float: left;
+  width: 6rem;
+}
+
+.module-one-right {
+  float: right;
+  width: 4.8rem;
+}
+
+.module-one-photo {
+  padding: .2rem .1rem;
+}
+
+.module-one-photo-inner {
+  width: 100%;
+  height: 4rem;
+}
+
+.module-one-photo-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.module-one-photodetails>ul {
+  overflow-y: hidden;
+  height: 1rem;
+}
+
+.module-one-photodetails>ul>li {
+  float: left;
+  width: 2rem;
+  height: 1rem;
+}
+
+.module-one-photodetails>ul>li img {
+  width: 100%;
+  height: 100%;
+}
+
+.module-one-map {
+  width: 100%;
+  /*height: 2.4rem;*/
+  padding: .2rem .2rem 0 0;
+}
+
+.module-one-mapDetail {
+  width: 100%;
+  height: 2.2rem;
+  border: 1px solid #ccc;
+}
+
+.module-one-compare {
+  width: 100%;
+  height: 3rem;
+  padding: .2rem .2rem 0 0;
+  overflow: auto;
+}
+
+.module-one-compare .compare-item {
+  width: 50%;
+  float: left;
+}
+
+.module-one-compare .compare-img {
+  width: 50%;
+  height: 1rem;
+}
+
+.module-one-compare .compare-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.compare-item-des >div {
+  float: left;
+  width: 50%;
+  font-size: .16rem;
+}
