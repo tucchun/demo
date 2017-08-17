@@ -35,7 +35,6 @@ a:active {
 }
 
 
-
 /*工具*/
 
 .icon {
@@ -99,7 +98,6 @@ a:active {
 }
 
 
-
 /*滚动条样式*/
 
 
@@ -112,7 +110,6 @@ a:active {
 }
 
 
-
 /*定义滚动条的轨道，内阴影及圆角*/
 
 .scrollbar::-webkit-scrollbar-track {
@@ -120,7 +117,6 @@ a:active {
   border-radius: 2.5px;
   background-color: #f5f5f5;
 }
-
 
 
 /*定义滑块，内阴影及圆角*/
@@ -132,7 +128,6 @@ a:active {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
   background-color: #555;
 }
-
 
 
 /*页面布局样式*/
@@ -195,7 +190,6 @@ body * {
 }
 
 
-
 /*头部*/
 
 .header-left {
@@ -216,7 +210,6 @@ body * {
   width: 100%;
   height: 100%;
 }
-
 
 
 /*菜单*/
@@ -302,7 +295,6 @@ li.menu-item:hover .default {
 }
 
 
-
 /*模块首页*/
 
 .module-index {
@@ -313,29 +305,119 @@ li.menu-item:hover .default {
 }
 
 .module-index-bundleA,
-.module-index-bundleB {
+.module-index-bundleB,
+.module-index-bundleC {
   font-size: .25rem;
   position: absolute;
-}
-
-.module-index-bundleA {
-  top: .25rem;
-  left: .52rem;
-}
-
-.module-index-bundleB {
-  top: 1.8rem;
   left: .52rem;
 }
 
 .module-index-bundleA>dl>dt,
-.module-index-bundleB>dl>dt {
+.module-index-bundleB>dl>dt,
+.module-index-bundleC>dl>dt {
   width: 1.6rem;
 }
 
 .module-index-bundleA>dl>dd,
-.module-index-bundleB>dl>dd {
-  margin: .25rem 0 0 .2rem;
+.module-index-bundleB>dl>dd,
+.module-index-bundleC>dl>dd {
+  margin: .2rem 0 .1rem .2rem;
+}
+
+.module-index-bundleA {
+  top: .25rem;
+}
+
+.module-index-bundleB {
+  top: 1.8rem;
+}
+
+.module-index-bundleC {
+  top: 4.6rem;
+}
+
+.module-index-bundleD {
+  width: 4.45rem;
+  margin: .2rem 0 0 -2.225rem;
+  position: absolute;
+  left: 50%;
+}
+
+.module-index-bundleD>div {
+  width: 50%;
+}
+
+.module-index-bundleD>div dd {
+  margin: 0 0 .2rem 0;
+}
+
+.module-index-bundleE {
+  width: 11rem;
+  position: absolute;
+  left: 50%;
+  margin: 2.8rem 0 0 -5.5rem;
+}
+
+.module-index-bundleE .e-title{
+  font-weight: 500;
+  font-size: .55rem;
+}
+
+.module-index-bundleE .e-total > li{
+  display: inline-block;
+  width: .9rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .65rem;
+  margin: 0 .2rem;
+  box-shadow:
+    0 0 5px 5px #fff,
+    0 0 5px 5px #fff,
+    0 0 5px 5px #fff;
+}
+
+.module-index-bundleF{
+  position: absolute;
+  right: .52rem;
+  top: .4rem;
+}
+
+.cirle-icon{
+  display: inline-block;
+  width: 1.53rem;
+  height: 1.53rem;
+}
+.cirle-icon>img{
+  width: 100%;
+  height: 100%;
+}
+
+.f-circle{
+  width: 1.53rem;
+  margin: 0 0 .5rem 0;
+}
+
+.f-circle>dl>dt{
+  position: relative;
+}
+
+.point{
+
+position: absolute;
+
+height: 100%;
+
+width: 100%;
+
+line-height: 1.53rem;
+
+top: 0;
+
+text-align: center;
+
+font-size: .45rem;
+
+color: #57d4ce;
 }
 
 
@@ -367,6 +449,21 @@ li.menu-item:hover .default {
   color: #3385ff;
 }
 
+.module-index-bundleG{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .2rem 0;
+}
+
+.g-top{
+  width: 3rem;
+  margin: 0 auto;
+}
+
+.g-top-item > div{
+  margin-bottom: .2rem
+}
 
 
 /*导航*/
@@ -389,85 +486,3 @@ li.menu-item:hover .default {
 }
 
 
-
-/*所有报警*/
-
-.module-one-left {
-  float: left;
-  width: 6rem;
-}
-
-.module-one-right {
-  float: right;
-  width: 4.8rem;
-}
-
-.module-one-photo {
-  padding: .2rem .1rem;
-}
-
-.module-one-photo-inner {
-  width: 100%;
-  height: 4rem;
-}
-
-.module-one-photo-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-.module-one-photodetails>ul {
-  overflow-y: hidden;
-  height: 1rem;
-}
-
-.module-one-photodetails>ul>li {
-  float: left;
-  width: 2rem;
-  height: 1rem;
-}
-
-.module-one-photodetails>ul>li img {
-  width: 100%;
-  height: 100%;
-}
-
-.module-one-map {
-  width: 100%;
-  /*height: 2.4rem;*/
-  padding: .2rem .2rem 0 0;
-}
-
-.module-one-mapDetail {
-  width: 100%;
-  height: 2.2rem;
-  border: 1px solid #ccc;
-}
-
-.module-one-compare {
-  width: 100%;
-  height: 3rem;
-  padding: .2rem .2rem 0 0;
-  overflow: auto;
-}
-
-.module-one-compare .compare-item {
-  width: 50%;
-  float: left;
-}
-
-.module-one-compare .compare-img {
-  width: 50%;
-  height: 1rem;
-}
-
-.module-one-compare .compare-img img {
-  width: 100%;
-  height: 100%;
-}
-
-.compare-item-des>div {
-  float: left;
-  width: 50%;
-  font-size: .16rem;
-}
