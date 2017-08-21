@@ -1,0 +1,311 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+ul,
+li,
+dl,
+dd,
+dt {
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+html,
+body {
+  background: #ccc;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: .2rem;
+}
+
+body {
+  /*max-width: 19.2rem;*/
+  margin: auto;
+  background-color: transparent;
+}
+
+body * {
+  /*max-width: 19.2rem;*/
+}
+
+
+/*工具*/
+
+.icon {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.affix {
+  position: fixed;
+}
+
+
+/*首页*/
+
+.wrapper {
+  height: 100%;
+  /*padding: .2rem 1rem;*/
+}
+
+.wrapper .bg-wrap {
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  /*min-width: 1000px;*/
+  z-index: -10;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  zoom: 1;
+  background-image: url('../image/bg.jpg');
+}
+
+.nav-btn {
+  display: inline-block;
+  padding: .1rem .5rem;
+  border: 1px solid #2b81b2;
+  border-radius: 1rem;
+}
+
+.logo {
+  width: 1.292rem;
+  height: 1.348rem;
+  display: inline-block;
+  margin-top: .1rem;
+}
+
+.logo>img {
+  width: 100%;
+  height: 100%;
+}
+
+.w-header {
+  width: 100%;
+  height: 1.2rem;
+  background-color: #025081;
+  position: absolute;
+  padding: 0 1rem;
+}
+
+.w-content {
+  height: 100%;
+  padding: 1.8rem 1rem 0 1rem;
+}
+
+.w-module {
+  position: relative;
+  height: 100%;
+  width: 10.8rem;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.btn-list .nav-btn{
+  margin: 0 0 0 .3rem;
+}
+
+.w-header-title {
+  line-height: 1.2rem;
+  /* height: 1.4rem; */
+  font-size: .32rem;
+  margin: 0;
+  /*padding-left: .2rem;*/
+  font-weight: 300;
+}
+
+.w-module-features>h2 {
+  margin: 0 0 .1rem 0;
+  font-size: .25rem;
+  font-weight: 300;
+}
+
+.w-module-features>ul>li {
+  float: left;
+  width: 1.8rem;
+  height: 1.404rem;
+  background-color: #fff;
+  margin: 0 .06rem .06rem 0;
+}
+
+.w-module-features .icon-user {
+  width: .6rem;
+  height: .5rem;
+  display: inline-block;
+}
+
+.bg-yellow {
+  background-color: #f5c139!important;
+}
+
+.bg-light-blue {
+  background-color: #00b4e9!important;
+}
+
+.w-module-features>ul>li.w-features-item {
+  background-color: #0b6d94;
+  cursor: pointer;
+}
+
+.w-module-features>ul>li.w-features-item.active,
+.w-module-features>ul>li.w-features-item:hover{
+  background-color: #025287;
+}
+
+
+
+.w-module-features .w-features-item-inner {
+  height: 100%;
+}
+
+.w-module-features .w-features-item-inner > dt {
+  padding: .2rem 0;
+}
+
+.w-module-features .w-features-item-inner > dd {
+  padding: .05rem 0 0 0;
+}
+
+.w-module-features .icon-user>img {
+  width: 100%;
+  height: 100%;
+}
+
+.m-userManage {
+  /*height: 4.5rem;*/
+}
+
+.m-mannger {
+  margin: .45rem 0 0 0;
+}
+
+.w-notice-item {
+  margin: 0 0 .1rem 0;
+}
+
+.w-notice-item > h2 {
+  margin: 0 0 .1rem 0;
+  font-weight: 300;
+}
+
+.w-notice-item-list {
+  width: 5rem;
+  height: 3rem;
+  background-color: #025287;
+  position: relative;
+}
+
+.w-notice-item-list > ul {
+  padding: .2rem;
+  height: 2.6rem;
+}
+
+.w-notice-item-list > ul > li {
+  /*margin: 0 0 0 .4rem;*/
+}
+
+.w-notice-item-list .w-notice-more {
+  /*position: absolute;*/
+  /*bottom: .2rem;*/
+  /*right: .2rem;*/
+  padding: 0 .2rem;
+}
