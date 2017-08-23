@@ -263,7 +263,7 @@ body * {
   margin: 0 .06rem .06rem 0;
 }
 
-.w-module-features .icon-user {
+.w-module-features .menu-icon {
   width: .6rem;
   height: .5rem;
   display: inline-block;
@@ -284,14 +284,14 @@ body * {
 }
 
 .w-module-features .w-features-item-inner > dt {
-  padding: .2rem 0;
+  padding: .32rem 0 0.16rem 0;
 }
 
 .w-module-features .w-features-item-inner > dd {
-  padding: .05rem 0 0 0;
+  /* padding: .05rem 0 0 0; */
 }
 
-.w-module-features .icon-user>img {
+.w-module-features .menu-icon>img {
   width: 100%;
   height: 100%;
 }
