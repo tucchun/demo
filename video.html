@@ -74,7 +74,7 @@
               </i>
             </dt>
             <dd>
-              <a href="./one.html">检索</a>
+              检索
             </dd>
           </dl>
           <div class="bg"></div>
@@ -92,7 +92,7 @@
               </i>
             </dt>
             <dd>
-              <a href="./one.html">对比</a>
+              对比
             </dd>
           </dl>
           <div class="bg"></div>
@@ -150,7 +150,7 @@
               </i>
             </dt>
             <dd>
-              <a href="./one.html">资料</a>
+              资料
             </dd>
           </dl>
           <div class="bg"></div>
@@ -168,7 +168,7 @@
               </i>
             </dt>
             <dd>
-              <a href="./one.html">系统</a>
+              系统
             </dd>
           </dl>
           <div class="bg"></div>
@@ -176,14 +176,146 @@
       </ul>
     </div>
     <div class="content">
-      <div class="module-index">
-        <div class="tab-list">
-          <div class="tab-item">人脸轨迹</div>
-          <div class="tab-item active">判断分析</div>
-          <div class="tab-item">曝光频次</div>
+      <div class="module-index scrollbar">
+        <div class="tab-list js-tab-list">
+          <div class="tab-item">实时监控</div>
+          <div class="tab-item active" data-target="grab">抓拍记录</div>
+          <div class="tab-item">黑名单警告</div>
+          <div class="tab-item">白名单记录</div>
         </div>
-        <div class="tab-content">
-          <div></div>
+        <div class="tab-content js-tab-content">
+          <div id="grab">
+            <div class="list-search clearfix grab">
+              <dl class="dl-inline">
+                <dt>抓拍地址</dt>
+                <dd>
+                  <input type="text" placeholder="抓拍地址">
+                  <div class="bg bg-default"></div>
+                </dd>
+              </dl>
+              <dl class="dl-inline">
+                <dt>时间范围</dt>
+                <dd>
+                  <input type="text" class="sm-text" placeholder="首时间">
+                  <div class="bg bg-default"></div>
+                </dd>
+                <dd>到</dd>
+                <dd>
+                  <input type="text" class="sm-text" placeholder="末时间">
+                  <div class="bg bg-default"></div>
+                </dd>
+              </dl>
+              <dl class="dl-inline">
+                <dt>年龄</dt>
+                <dd>
+                  <input type="text" class="sm-text" placeholder="年龄">
+                  <div class="bg bg-default"></div>
+                </dd>
+                <dd>到</dd>
+                <dd>
+                  <input type="text" class="sm-text" placeholder="年龄">
+                  <div class="bg bg-default"></div>
+                </dd>
+              </dl>
+              <dl class="dl-inline">
+                <dt>
+                  <button class="btn">搜索</button>
+                </dt>
+              </dl>
+            </div>
+            <div class="tb-wraper">
+              <table class="tb">
+                <thead>
+                  <tr>
+                    <th>人脸图</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>抓拍时间</th>
+                    <th>布控位子</th>
+                    <th>相机</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="person" src="./assets/image/person.jpg" alt="">
+                    </td>
+                    <td>男</td>
+                    <td>33</td>
+                    <td>2017-12-12 10:00:00</td>
+                    <td>广东省深圳市宝安区</td>
+                    <td>
+                      相机-001
+                    </td>
+                    <td>
+                      <button class="btn">重置</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="person" src="./assets/image/person.jpg" alt="">
+                    </td>
+                    <td>男</td>
+                    <td>33</td>
+                    <td>2017-12-12 10:00:00</td>
+                    <td>广东省深圳市宝安区</td>
+                    <td>
+                      相机-001
+                    </td>
+                    <td>
+                      <button class="btn">重置</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="person" src="./assets/image/person.jpg" alt="">
+                    </td>
+                    <td>男</td>
+                    <td>33</td>
+                    <td>2017-12-12 10:00:00</td>
+                    <td>广东省深圳市宝安区</td>
+                    <td>
+                      相机-001
+                    </td>
+                    <td>
+                      <button class="btn">重置</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="person" src="./assets/image/person.jpg" alt="">
+                    </td>
+                    <td>男</td>
+                    <td>33</td>
+                    <td>2017-12-12 10:00:00</td>
+                    <td>广东省深圳市宝安区</td>
+                    <td>
+                      相机-001
+                    </td>
+                    <td>
+                      <button class="btn">重置</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="person" src="./assets/image/person.jpg" alt="">
+                    </td>
+                    <td>男</td>
+                    <td>33</td>
+                    <td>2017-12-12 10:00:00</td>
+                    <td>广东省深圳市宝安区</td>
+                    <td>
+                      相机-001
+                    </td>
+                    <td>
+                      <button class="btn">重置</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -191,5 +323,6 @@
 </body>
 <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0"></script> -->
 <script type="text/javascript" src="./assets/lib/jquery/jquery-1.9.1.js"></script>
+<script src="./assets/js/app.js"></script>
 
 </html>
