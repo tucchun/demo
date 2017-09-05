@@ -1,0 +1,161 @@
+body {
+  color: #fff;
+}
+
+.container{
+  max-width: 1600px;
+  min-width: 1200px;
+  margin:  0 auto;
+}
+
+.pl-wrapper {
+  height: 100%;
+  padding: 20px 100px;
+}
+
+.pl-wrapper .bg-wrap {
+  position: fixed;
+  _position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  /*min-width: 1000px;*/
+  z-index: -10;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  zoom: 1;
+  background-image: url('../image/bg.jpg');
+}
+
+.w-header {
+  height: 149.2px;
+  /* padding: 0 0 .8px 0; */
+  position: absolute;
+}
+
+.logo {
+  width: 129.2px;
+  height: 134.8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.logo>img {
+  width: 100%;
+  height: 100%;
+}
+
+.w-content {
+  height: 100%;
+  padding: 209.2px 0 0 0;
+}
+
+.w-module {
+  position: relative;
+  height: 100%;
+}
+
+.w-header-title {
+  line-height: 149.2px;
+  height: 149.2px;
+  font-size: 50px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.w-module-features>h2 {
+  margin: 0 0 10px 0;
+  font-size: 25px;
+}
+
+.w-module-features>ul>li {
+  float: left;
+  width: 180px;
+  height: 140.4px;
+  background-color: #fff;
+  margin: 0 20px 20px 0;
+}
+
+.w-module-features .icon-user {
+  width: 60px;
+  height: 50px;
+  display: inline-block;
+}
+
+.bg-yellow {
+  background-color: #f5c139!important;
+}
+
+.bg-light-blue {
+  background-color: #00b4e9!important;
+}
+
+.w-module-features>ul>li.w-features-item {
+  background-color: #0062fb;
+}
+
+.w-module-features .w-features-item-inner {
+  height: 100%;
+}
+
+.w-module-features .w-features-item-inner > dt {
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+}
+
+.w-module-features .w-features-item-inner > dd {
+  padding: 5px 0 0 0;
+}
+
+.w-module-features .icon-user>img {
+  width: 100%;
+  height: 100%;
+}
+
+.m-userManage {
+  height: 450px;
+}
+
+.m-mannger {
+  /*position: absolute;*/
+  /*bottom: .8px;*/
+}
+
+.w-notice-item {
+  margin: 0 0 10px 0;
+}
+
+.w-notice-item > h2 {
+  margin: 0 0 10px 0;
+}
+
+.w-notice-item-list {
+  width: 500px;
+  height: 300px;
+  background-color: #029fff;
+  position: relative;
+}
+
+.w-notice-item-list > ul {
+  padding: 20px;
+  height: 260px;
+}
+
+.w-notice-item-list > ul > li {
+  list-style: disc;
+  margin: 0 0 0 40px;
+}
+
+.w-notice-item-list .w-notice-more {
+  /*position: absolute;*/
+  /*bottom: .2px;*/
+  /*right: .2px;*/
+  padding: 0 20px;
+}
