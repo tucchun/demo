@@ -1,0 +1,109 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: #fff;
+}
+
+.login {
+  padding-top: 158px;
+}
+
+.login .bg-wrap {
+  background-image: url('../image/login-bg.png');
+}
+
+.login .title {
+  height: 79px;
+  /*line-height: 79px;*/
+  width: 540px;
+  margin: 0 auto 48px auto;
+  padding: 0 12px;
+  color: #fff;
+}
+
+.login .title-inner dt,
+.login .title-inner dd {
+  height: 79px;
+  vertical-align: middle;
+}
+
+.login .primary-title {
+  font-size: 40px;
+}
+
+.login .second-title {
+  font-size: 27px;
+  line-height: 1;
+}
+
+.login .primary-title-txt {}
+
+.login .form {
+  margin: 0 auto;
+  padding: 54px 30px 35px 30px;
+  width: 540px;
+  height: 359px;
+  border: 1px solid #7291a5;
+}
+
+.login .form-element {
+  margin-bottom: 24px;
+  border: 1px solid #7291a5;
+  height: 55px;
+}
+
+.login .form-element dt {
+  width: 55px;
+}
+
+.login .form-element dd {
+  width: 421px;
+  margin-top: 6.5px;
+}
+
+.login .form-element i.icon {
+  margin-top: 13.5px;
+}
+
+.login .form-element input[type=text] {
+  height: 40px;
+  border-width: 0 0 0 1px;
+  width: 401px;
+}
+
+.login .form .btn {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 0;
+  font-size: 24px;
+  height: auto;
+  padding: 8px 0;
+}
+
+.login .form .tip{
+	margin-top: 30px;
+}
+
+.login .tip input[type=checkbox],
+.login .tip span{
+	vertical-align: middle;
+}
+
+.login .tip input[type=checkbox]{
+	width: 20px;
+	height: 20px
+}
+
+.login .copright{
+	width: 424px;
+	height: 80px;
+	border: 1px solid #7291a5;
+	position: absolute;
+	left: 50%;
+	margin-left: -212px;
+	bottom: 70px;
+}

@@ -62,11 +62,10 @@ var appJsSrc = 'src/app/**/*.js',
     cssDist = 'dist/',
     htmlSrc = 'src/**/*.html',
     htmlDist = 'dist/',
-    imageSrc = 'src/app/**/*.{png,jpg,gif}',
-    imageDist = 'dist/app/',
+    imageSrc = './assets/image/icon/*.{png,jpg,gif}',
+    imageDist = './assets/sprite',
     jsonSrc = 'src/**/*.json',
     jsonDist = 'dist/';
-
 
 
 /**
@@ -111,7 +110,6 @@ gulp.task("opt", function () {
 // 合成雪碧图
 gulp.task('sprite', function () {
     // Generate our spritesheet
-    var imageSrc = './assets/icon/*'
     var spriteData = gulp.src(imageSrc).pipe(spritesmith({
         imgName: 'sprite.png',
         cssName: 'sprite.css'
@@ -122,7 +120,7 @@ gulp.task('sprite', function () {
         // DEV: We must buffer our stream into a Buffer for `imagemin`
         .pipe(buffer())
         .pipe(imagemin())
-        .pipe(gulp.dest("./assets/sprite/"));
+        .pipe(gulp.dest(imageDist));
 
     // Pipe CSS stream through CSS optimizer and onto disk
     var cssStream = spriteData.css
