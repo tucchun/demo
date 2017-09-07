@@ -8,15 +8,12 @@
 }
 
 .condition {
-  border-bottom: 1px solid #086e98;
+  padding-top: 12px;
 }
 
-.condition-left {
-  width: 304px;
-}
-
-.condition-right {
-  width: 600px;
+.condition .form-element{
+  float: left;
+  margin-right: 10px;
 }
 
 .condition .form-element dl {
@@ -24,13 +21,13 @@
 }
 
 .condition .form-element dt {
-  width: 150px;
+  /*width: 150px;*/
   height: 40px;
   line-height: 40px;
   padding-right: 7px;
 }
 
-.track-search-result{
+.capture-result{
   overflow-x: hidden;
 }
 
@@ -67,88 +64,88 @@
   font-size: 20px;
 }
 
-.track-search .condition-top {
+.capture .condition-top {
   padding: 12px 0 32px 0;
 }
 
-.track-search .upload {
+.capture .upload {
   width: 240px;
   border: 1px solid #456985;
   height: 40px;
 }
 
-.track-search .search-tip {
+.capture .search-tip {
   height: 40px;
   margin-left: 32px;
 }
 
-.track-search .condition-tip .icon,
-.track-search .condition-tip span,
-.track-search .search-tip .icon,
-.track-search .search-tip span {
+.capture .condition-tip .icon,
+.capture .condition-tip span,
+.capture .search-tip .icon,
+.capture .search-tip span {
   vertical-align: top;
 }
 
-.track-search .upload .icon {
+.capture .upload .icon {
   margin-top: 4px;
 }
 
-.track-search .upload span {
+.capture .upload span {
   display: inline-block;
   line-height: 38px;
   height: 38px;
 }
 
-.track-search .search-tip .icon-checkbox {
+.capture .search-tip .icon-checkbox {
   margin-top: 6.5px;
 }
 
-.track-search .search-tip .icon-tip {
+.capture .search-tip .icon-tip {
   margin-top: 11px;
 }
 
-.track-search .search-tip span {
+.capture .search-tip span {
   display: inline-block;
   line-height: 40px;
   height: 40px;
   padding: 0 8px;
 }
 
-.track-search .age {
+.capture .age {
   padding: 0 10px;
 }
 
-.track-search .age input {
+.capture .age input {
   border: none;
   background-color: transparent!important;
   width: 65px;
 }
 
-.track-search .gender {
+.capture .gender {
   margin-right: 5px;
   color: #959595;
 }
 
-.track-search .time dd {
+.capture .time dd {
   line-height: 40px;
 }
 
-.track-search .time {
+.capture .time {
   position: relative;
 }
 
-.track-search .time .tip {
+.capture .time .tip {
   margin-left: 150px;
   position: relative;
   top: -9px;
   color: #007ccd;
 }
 
-.track-search .btn-cnt dd{
+.capture .btn-cnt dd{
   margin-right: 10px;
 }
 
-.track-search .LH40{
+.capture .LH40{
   margin-left: 5px;
   line-height: 40px;
 }
