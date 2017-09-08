@@ -1,0 +1,99 @@
+.module-compare {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 127px;
+}
+
+.module-compare .tab-list {
+  border-bottom: 8px solid #4e6688;
+}
+
+.module-compare .tab-item {
+  width: 50%;
+  height: 75px;
+  position: relative;
+  bottom: -13px;
+}
+
+.module-compare .tab-item.active,
+.module-compare .tab-item:hover {
+  border-bottom-color: #48dceb;
+}
+
+.module-compare .tab-item {
+  border-bottom: 18px solid transparent;
+}
+
+.module-compare .one {
+  margin-top: 120px;
+}
+
+.module-compare .one-item {
+  float: left;
+  width: 320px;
+  height: 320px;
+  line-height: 320px;
+  text-align: center;
+}
+
+.module-compare .one-item > i {
+  vertical-align: middle;
+}
+
+.module-compare .one-center {
+  font-size: 36px;
+}
+
+.module-compare .one-left,
+.module-compare .one-right {
+  border: 1px solid #335978;
+}
+
+.module-compare .more {
+  margin-top: 69px;
+}
+
+.module-compare .condition {
+  padding-top: 12px;
+}
+
+.module-compare .form-element {
+  float: left;
+  margin-right: 10px;
+}
+
+.module-compare .form-element dl {
+  margin-bottom: 16px;
+}
+
+.module-compare .form-element dt,
+.module-compare .form-element dd {
+  height: 40px;
+  line-height: 40px;
+}
+
+.module-compare .new{
+	padding: 0 40px;
+	border: 1px solid #456985;
+}
+
+.module-compare .new dt{
+	margin-right: 18px;
+}
+
+.module-compare .new dt > i{
+	vertical-align: middle;
+}
+
+.module-compare .form-element dt {
+  /*width: 150px;*/
+  padding-right: 7px;
+}
+
+.module-compare .operation > a{
+	margin-right: 18px;
+}
+
+.module-compare .tb-wraper{
+	margin-top: 16px;
+}

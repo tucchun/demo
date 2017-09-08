@@ -2,52 +2,69 @@
 <html>
 
 <head>
-  <title>Index</title>
-  <script type="text/javascript" src="./assets/lib/adaptive/adaptive-version2.js"></script>
-  <script>
-  window['adaptive'].desinWidth = 1980; // 设计图宽度
-  window['adaptive'].baseFont = 20; // 没有缩放时的字体大小
-  window['adaptive'].maxWidth = 1980; // 页面最大宽度 默认540
-  window['adaptive'].init(); // 调用初始化方法
-  </script>
+  <title>首页</title>
   <link rel="stylesheet" type="text/css" href="./assets/lib/normalize.css">
-  <link rel="stylesheet" href="./assets/sprite/sprite.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./assets/sprite/sprite.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/list.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="bg-wrap"></div>
+    <!-- <div class="bg-wrap"></div> -->
     <div class="header">
-      <div class="header-left">
-        <i class="head-logo">
-          <img src="./assets/icon/logo.png" alt="">
-        </i>
+      <div class="header-left pull-left">
+        <i class="icon icon-login-logo"></i>
+      </div>
+      <div class="pull-left title">
+        人脸布控实战平台系统
+      </div>
+      <div class="pull-right userinfo">
+        <div class="pull-left">
+          你好，admin
+        </div>
+        <div class="person pull-left">
+          <img src="./assets/image/person.jpg" alt="">
+        </div>
       </div>
     </div>
     <div class="menu ">
       <ul class="menu-list scrollbar">
-        <a href="./index.html">
-          <li class="menu-item">
-            <dl>
-              <dt class="text-center">
-                <!-- <i class="icon icon-index default"></i>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <!-- <i class="icon icon-index default"></i>
               <i class="icon icon-index-hover hover"></i> -->
-                <i class="menu-icon default">
+              <i class="menu-icon default">
                 <img src="./assets/icon/index.png" alt="">
               </i>
-                <i class="menu-icon hover">
+              <i class="menu-icon hover">
                 <img src="./assets/icon/index-hover.png" alt="">
               </i>
-              </dt>
-              <dd>
-                首页
-              </dd>
-            </dl>
-            <div class="bg"></div>
-          </li>
-        </a>
-        <a href="./index.html">
+            </dt>
+            <dd>
+              首页
+            </dd>
+          </dl>
+        </li>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <!-- <i class="icon icon-index default"></i>
+              <i class="icon icon-index-hover hover"></i> -->
+              <i class="menu-icon default">
+                <img src="./assets/icon/results.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/results-hover.png" alt="">
+              </i>
+            </dt>
+            <dd>
+              战果
+            </dd>
+          </dl>
+        </li>
+        <a href="./bayonet.html">
           <li class="menu-item">
             <dl>
               <dt class="text-center">
@@ -60,27 +77,8 @@
                 卡口
               </dd>
             </dl>
-            <div class="bg"></div>
           </li>
         </a>
-        <li class="menu-item">
-          <dl>
-            <dt class="text-center">
-              <!--     <i class="icon icon-search default"></i>
-          <i class="icon icon-search-hover hover"></i> -->
-              <i class="menu-icon default">
-                <img src="./assets/icon/search.png" alt="">
-              </i>
-              <i class="menu-icon hover">
-                <img src="./assets/icon/search-hover.png" alt="">
-              </i>
-            </dt>
-            <dd>
-              检索
-            </dd>
-          </dl>
-          <div class="bg"></div>
-        </li>
         <li class="menu-item">
           <dl>
             <dt class="text-center">
@@ -97,7 +95,6 @@
               对比
             </dd>
           </dl>
-          <div class="bg"></div>
         </li>
         <li class="menu-item active">
           <dl>
@@ -115,28 +112,24 @@
               名单
             </dd>
           </dl>
-          <div class="bg"></div>
         </li>
-        <a href="./control.html">
-          <li class="menu-item">
-            <dl>
-              <dt class="text-center">
-                <i class="menu-icon default">
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <i class="menu-icon default">
                 <img src="./assets/icon/arrangement.png" alt="">
               </i>
-                <i class="menu-icon hover">
+              <i class="menu-icon hover">
                 <img src="./assets/icon/arrangement-hover.png" alt="">
               </i>
-                <!--  <i class="icon icon-arrangement default"></i>
+              <!--  <i class="icon icon-arrangement default"></i>
              <i class="icon icon-arrangement-hover hover"></i> -->
-              </dt>
-              <dd>
-                布控
-              </dd>
-            </dl>
-            <div class="bg"></div>
-          </li>
-        </a>
+            </dt>
+            <dd>
+              布控
+            </dd>
+          </dl>
+        </li>
         <li class="menu-item">
           <dl>
             <dt class="text-center">
@@ -153,7 +146,6 @@
               资料
             </dd>
           </dl>
-          <div class="bg"></div>
         </li>
         <li class="menu-item">
           <dl>
@@ -171,468 +163,451 @@
               系统
             </dd>
           </dl>
-          <div class="bg"></div>
         </li>
       </ul>
     </div>
     <div class="content">
-      <div class="module-index">
-        <div class="tab-list js-tab-list">
-          <div class="tab-item active" data-target="js-search">以图搜库</div>
-          <div class="tab-item" data-target="js-blacklist">黑名单库</div>
-          <div class="tab-item" data-target="js-whitelist">白名单库</div>
-          <div class="tab-item">批量导入</div>
-        </div>
-        <div class="tab-content js-tab-content">
-          <div id="js-search">
-            <div class="list-searchByImage">
-              <div class="search-icon text-center">
-                <img src="./assets/image/08.png" alt="">
-                <div class="bg bg-default"></div>
+      <div class="bg-content content-inner scrollbar">
+        <div class="module-list">
+          <div class="tab-list js-tab-list">
+            <div class="tab-item active" data-target="js-search">以图搜库</div>
+            <div class="tab-item" data-target="js-blacklist">黑名单库</div>
+            <div class="tab-item" data-target="js-whitelist">白名单库</div>
+            <div class="tab-item">批量导入</div>
+          </div>
+          <div class="tab-content js-tab-content">
+            <div id="js-search">
+              <div class="list-searchByImage">
+                <div class="search-icon text-center bg-primary">
+                  <i class="icon icon-camera-2"></i>
+                </div>
+                <div class="form-elements">
+                  <div class="clearfix">
+                    <div class="form-element">
+                      <dl class="dl-inline clearfix pull-left">
+                        <dt class="text-right">姓名</dt>
+                        <dd>
+                          <input type="text" placeholder="姓名">
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="form-element">
+                      <dl class="dl-inline clearfix pull-right">
+                        <dt class="text-right">性别</dt>
+                        <dd>
+                          <input type="text" placeholder="性别">
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="form-element">
+                      <dl class="dl-inline clearfix pull-left">
+                        <dt class="text-right">照片说明</dt>
+                        <dd>
+                          <input type="text" placeholder="照片说明">
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="form-element">
+                      <dl class="dl-inline clearfix pull-right">
+                        <dt class="text-right">照片数量</dt>
+                        <dd>
+                          <input type="text" placeholder="照片数量">
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                    <div class="form-element">
+                      <dl class="dl-inline clearfix">
+                        <dd class="pull-left">
+                          <input type="text" placeholder="点击搜索" class="text-long">
+                        </dd>
+                        <dd class="pull-right">
+                          <button class="btn">搜索</button>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form-elements">
-                <div class="clearfix">
-                  <dl class="dl-inline pull-left">
-                    <dt class="text-right">姓名</dt>
-                    <dd>
-                      <input type="text" placeholder="姓名">
-                      <div class="bg bg-default"></div>
-                    </dd>
-                  </dl>
-                  <dl class="dl-inline pull-right">
-                    <dt class="text-right">性别</dt>
-                    <dd>
-                      <input type="text" placeholder="性别">
-                      <div class="bg bg-default"></div>
-                    </dd>
-                  </dl>
-                </div>
-                <div class="clearfix">
-                  <dl class="dl-inline pull-left">
-                    <dt class="text-right">照片说明</dt>
-                    <dd>
-                      <input type="text" placeholder="照片说明">
-                      <div class="bg bg-default"></div>
-                    </dd>
-                  </dl>
-                  <dl class="dl-inline pull-right">
-                    <dt class="text-right">照片数量</dt>
-                    <dd>
-                      <input type="text" placeholder="照片数量">
-                      <div class="bg bg-default"></div>
-                    </dd>
-                  </dl>
-                </div>
-                <div class="clearfix">
+            </div>
+            <div id="js-whitelist" class="hide">
+              <div class="list-search clearfix">
+                <div class="form-element">
                   <dl class="dl-inline clearfix">
-                    <dd class="pull-left">
-                      <input type="text" placeholder="点击搜索" class="text-long">
-                      <div class="bg bg-default"></div>
+                    <dt>白名单库人数</dt>
+                    <dd>
+                      <input type="text" placeholder="白名单库人数">
                     </dd>
-                    <dd class="pull-right">
+                  </dl>
+                </div>
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>名单库序号</dt>
+                    <dd>
+                      <input type="text" placeholder="名单库序号">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>名单库名称</dt>
+                    <dd>
+                      <input type="text" placeholder="名单库名称">
+                    </dd>
+                  </dl>
+                </div>
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>
                       <button class="btn">搜索</button>
+                    </dt>
+                  </dl>
+                </div>
+              </div>
+              <div class="list-search-result clearfix">
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">普通VIP库</div>
+                  </div>
+                  <div class="img text-center">
+                    <img src="./assets/image/02.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                      <dl class="dl-inline clearfix">
+                        <dt>库序号</dt>
+                        <dd>20001</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>库名称</dt>
+                        <dd>普通VIP</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>人脸数</dt>
+                        <dd>10000</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>创建时间</dt>
+                        <dd>2017-03-04 10:30:54</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>备注</dt>
+                        <dd>无</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-edit"></i></dt>
+                      <dd>编辑</dd>
+                    </dl>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-delete-2"></i></dt>
+                      <dd>删除</dd>
+                    </dl>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-view"></i></dt>
+                      <dd>查看</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">白金VIP库</div>
+                  </div>
+                  <div class="img text-center">
+                    <img src="./assets/image/07.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                      <dl class="dl-inline clearfix">
+                        <dt>库序号</dt>
+                        <dd>20001</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>库名称</dt>
+                        <dd>普通VIP</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>人脸数</dt>
+                        <dd>10000</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>创建时间</dt>
+                        <dd>2017-03-04 10:30:54</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>备注</dt>
+                        <dd>无</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-edit"></i></dt>
+                      <dd>编辑</dd>
+                    </dl>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-delete-2"></i></dt>
+                      <dd>删除</dd>
+                    </dl>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-view"></i></dt>
+                      <dd>查看</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">钻石VIP库</div>
+                  </div>
+                  <div class="img text-center">
+                    <img src="./assets/image/00.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                      <dl class="dl-inline clearfix">
+                        <dt>库序号</dt>
+                        <dd>20001</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>库名称</dt>
+                        <dd>普通VIP</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>人脸数</dt>
+                        <dd>10000</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>创建时间</dt>
+                        <dd>2017-03-04 10:30:54</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>备注</dt>
+                        <dd>无</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-edit"></i></dt>
+                      <dd>编辑</dd>
+                    </dl>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-delete-2"></i></dt>
+                      <dd>删除</dd>
+                    </dl>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-view"></i></dt>
+                      <dd>查看</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">新增人脸库</div>
+                  </div>
+                  <div class="img text-center">
+                    <img src="./assets/image/08.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="js-blacklist" class="hide">
+              <div class="list-search clearfix">
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>黑名单库人数</dt>
+                    <dd>
+                      <input type="text" placeholder="黑名单库人数">
                     </dd>
                   </dl>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div id="js-whitelist" class="hide">
-            <div class="list-search clearfix">
-              <dl class="dl-inline">
-                <dt>白名单库人数</dt>
-                <dd>
-                  <input type="text" placeholder="白名单库人数">
-                  <div class="bg"></div>
-                </dd>
-              </dl>
-              <dl class="dl-inline">
-                <dt>名单库序号</dt>
-                <dd>
-                  <input type="text" placeholder="名单库序号">
-                  <div class="bg"></div>
-                </dd>
-              </dl>
-              <dl class="dl-inline">
-                <dt>名单库名称</dt>
-                <dd>
-                  <input type="text" placeholder="名单库名称">
-                  <div class="bg"></div>
-                </dd>
-              </dl>
-              <dl class="dl-inline">
-                <dt>
-                  <button class="btn">搜索</button>
-                </dt>
-              </dl>
-            </div>
-            <div class="list-search-result clearfix">
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">普通VIP库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/02.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
-                    <dl class="dl-inline">
-                      <dt>库序号</dt>
-                      <dd>20001</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>库名称</dt>
-                      <dd>普通VIP</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>人脸数</dt>
-                      <dd>10000</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>创建时间</dt>
-                      <dd>2017-03-04 10:30:54</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>备注</dt>
-                      <dd>无</dd>
-                    </dl>
-                  </div>
-                  <div class="bg"></div>
-                </div>
-                <div class="operation clearfix">
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>编辑</dd>
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>名单库序号</dt>
+                    <dd>
+                      <input type="text" placeholder="名单库序号">
+                    </dd>
                   </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>删除</dd>
+                </div>
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>名单库名称</dt>
+                    <dd>
+                      <input type="text" placeholder="名单库名称">
+                    </dd>
                   </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>查看</dd>
+                </div>
+                <div class="form-element">
+                  <dl class="dl-inline clearfix">
+                    <dt>
+                      <button class="btn">搜索</button>
+                    </dt>
                   </dl>
-                  <div class="bg"></div>
                 </div>
               </div>
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">白金VIP库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/07.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
-                    <dl class="dl-inline">
-                      <dt>库序号</dt>
-                      <dd>20001</dd>
+              <div class="list-search-result clearfix">
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">上访人员库</div>
+                  </div>
+                  <div class="img text-center">
+                    <img src="./assets/image/02.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                      <dl class="dl-inline clearfix">
+                        <dt>库序号</dt>
+                        <dd>20001</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>库名称</dt>
+                        <dd>普通VIP</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>人脸数</dt>
+                        <dd>10000</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>创建时间</dt>
+                        <dd>2017-03-04 10:30:54</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>备注</dt>
+                        <dd>无</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-edit"></i></dt>
+                      <dd>编辑</dd>
                     </dl>
-                    <dl class="dl-inline">
-                      <dt>库名称</dt>
-                      <dd>普通VIP</dd>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-delete-2"></i></dt>
+                      <dd>删除</dd>
                     </dl>
-                    <dl class="dl-inline">
-                      <dt>人脸数</dt>
-                      <dd>10000</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>创建时间</dt>
-                      <dd>2017-03-04 10:30:54</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>备注</dt>
-                      <dd>无</dd>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-view"></i></dt>
+                      <dd>查看</dd>
                     </dl>
                   </div>
-                  <div class="bg"></div>
                 </div>
-                <div class="operation clearfix">
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>编辑</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>删除</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>查看</dd>
-                  </dl>
-                  <div class="bg"></div>
-                </div>
-              </div>
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">钻石VIP库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/00.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
-                    <dl class="dl-inline">
-                      <dt>库序号</dt>
-                      <dd>20001</dd>
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">临时人员库</div>
+                  </div>
+                  <div class="img text-center">
+                    <img src="./assets/image/07.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                      <dl class="dl-inline clearfix">
+                        <dt>库序号</dt>
+                        <dd>20001</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>库名称</dt>
+                        <dd>普通VIP</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>人脸数</dt>
+                        <dd>10000</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>创建时间</dt>
+                        <dd>2017-03-04 10:30:54</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>备注</dt>
+                        <dd>无</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-edit"></i></dt>
+                      <dd>编辑</dd>
                     </dl>
-                    <dl class="dl-inline">
-                      <dt>库名称</dt>
-                      <dd>普通VIP</dd>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-delete-2"></i></dt>
+                      <dd>删除</dd>
                     </dl>
-                    <dl class="dl-inline">
-                      <dt>人脸数</dt>
-                      <dd>10000</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>创建时间</dt>
-                      <dd>2017-03-04 10:30:54</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>备注</dt>
-                      <dd>无</dd>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-view"></i></dt>
+                      <dd>查看</dd>
                     </dl>
                   </div>
-                  <div class="bg"></div>
                 </div>
-                <div class="operation clearfix">
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>编辑</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>删除</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>查看</dd>
-                  </dl>
-                  <div class="bg"></div>
-                </div>
-              </div>
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">新增人脸库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/08.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">在访人员库</div>
                   </div>
-                  <div class="bg"></div>
-                </div>
-                <div class="operation clearfix">
-                  <div class="bg"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="js-blacklist" class="hide">
-            <div class="list-search clearfix">
-              <dl class="dl-inline">
-                <dt>黑名单库人数</dt>
-                <dd>
-                  <input type="text" placeholder="黑名单库人数">
-                  <div class="bg"></div>
-                </dd>
-              </dl>
-              <dl class="dl-inline">
-                <dt>名单库序号</dt>
-                <dd>
-                  <input type="text" placeholder="名单库序号">
-                  <div class="bg"></div>
-                </dd>
-              </dl>
-              <dl class="dl-inline">
-                <dt>名单库名称</dt>
-                <dd>
-                  <input type="text" placeholder="名单库名称">
-                  <div class="bg"></div>
-                </dd>
-              </dl>
-              <dl class="dl-inline">
-                <dt>
-                  <button class="btn">搜索</button>
-                </dt>
-              </dl>
-            </div>
-            <div class="list-search-result clearfix">
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">上访人员库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/02.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
-                    <dl class="dl-inline">
-                      <dt>库序号</dt>
-                      <dd>20001</dd>
+                  <div class="img text-center">
+                    <img src="./assets/image/00.png" alt="">
+                  </div>
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                      <dl class="dl-inline clearfix">
+                        <dt>库序号</dt>
+                        <dd>20001</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>库名称</dt>
+                        <dd>普通VIP</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>人脸数</dt>
+                        <dd>10000</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>创建时间</dt>
+                        <dd>2017-03-04 10:30:54</dd>
+                      </dl>
+                      <dl class="dl-inline clearfix">
+                        <dt>备注</dt>
+                        <dd>无</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="operation bg-primary clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-edit"></i></dt>
+                      <dd>编辑</dd>
                     </dl>
-                    <dl class="dl-inline">
-                      <dt>库名称</dt>
-                      <dd>普通VIP</dd>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-delete-2"></i></dt>
+                      <dd>删除</dd>
                     </dl>
-                    <dl class="dl-inline">
-                      <dt>人脸数</dt>
-                      <dd>10000</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>创建时间</dt>
-                      <dd>2017-03-04 10:30:54</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>备注</dt>
-                      <dd>无</dd>
+                    <dl class="dl-inline clearfix">
+                      <dt><i class="icon icon-view"></i></dt>
+                      <dd>查看</dd>
                     </dl>
                   </div>
-                  <div class="bg"></div>
                 </div>
-                <div class="operation clearfix">
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>编辑</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>删除</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>查看</dd>
-                  </dl>
-                  <div class="bg"></div>
-                </div>
-              </div>
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">临时人员库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/07.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
-                    <dl class="dl-inline">
-                      <dt>库序号</dt>
-                      <dd>20001</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>库名称</dt>
-                      <dd>普通VIP</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>人脸数</dt>
-                      <dd>10000</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>创建时间</dt>
-                      <dd>2017-03-04 10:30:54</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>备注</dt>
-                      <dd>无</dd>
-                    </dl>
+                <div class="list-searchResult-item">
+                  <div class="title bg-primary">
+                    <div class="text-center">新增人员库</div>
                   </div>
-                  <div class="bg"></div>
-                </div>
-                <div class="operation clearfix">
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>编辑</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>删除</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>查看</dd>
-                  </dl>
-                  <div class="bg"></div>
-                </div>
-              </div>
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">在访人员库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/00.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
-                    <dl class="dl-inline">
-                      <dt>库序号</dt>
-                      <dd>20001</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>库名称</dt>
-                      <dd>普通VIP</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>人脸数</dt>
-                      <dd>10000</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>创建时间</dt>
-                      <dd>2017-03-04 10:30:54</dd>
-                    </dl>
-                    <dl class="dl-inline">
-                      <dt>备注</dt>
-                      <dd>无</dd>
-                    </dl>
+                  <div class="img text-center">
+                    <img src="./assets/image/08.png" alt="">
                   </div>
-                  <div class="bg"></div>
-                </div>
-                <div class="operation clearfix">
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>编辑</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>删除</dd>
-                  </dl>
-                  <dl class="dl-inline">
-                    <dt></dt>
-                    <dd>查看</dd>
-                  </dl>
-                  <div class="bg"></div>
-                </div>
-              </div>
-              <div class="list-searchResult-item">
-                <div class="title">
-                  <div class="text-center">新增人员库</div>
-                  <div class="bg"></div>
-                </div>
-                <div class="img text-center">
-                  <img src="./assets/image/08.png" alt="">
-                  <div class="bg"></div>
-                </div>
-                <div class="info">
-                  <div class="info-inner">
+                  <div class="info bg-primary">
+                    <div class="info-inner">
+                    </div>
                   </div>
-                  <div class="bg"></div>
-                </div>
-                <div class="operation clearfix">
-                  <div class="bg"></div>
+                  <div class="operation bg-primary clearfix">
+                  </div>
                 </div>
               </div>
             </div>
@@ -642,8 +617,7 @@
     </div>
   </div>
 </body>
-<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0"></script> -->
-<script src="./assets/lib/jquery/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="./assets/lib/jquery/jquery-1.9.1.js"></script>
 <script src="./assets/js/app.js"></script>
 
 </html>

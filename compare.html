@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>首页</title>
+  <link rel="stylesheet" type="text/css" href="./assets/lib/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="./assets/sprite/sprite.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/compare.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="bg-wrap"></div> -->
+    <div class="header">
+      <div class="header-left pull-left">
+        <i class="icon icon-login-logo"></i>
+      </div>
+      <div class="pull-left title">
+        人脸布控实战平台系统
+      </div>
+      <div class="pull-right userinfo">
+        <div class="pull-left">
+          你好，admin
+        </div>
+        <div class="person pull-left">
+          <img src="./assets/image/person.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="menu ">
+      <ul class="menu-list scrollbar">
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <!-- <i class="icon icon-index default"></i>
+              <i class="icon icon-index-hover hover"></i> -->
+              <i class="menu-icon default">
+                <img src="./assets/icon/index.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/index-hover.png" alt="">
+              </i>
+            </dt>
+            <dd>
+              首页
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <!-- <i class="icon icon-index default"></i>
+              <i class="icon icon-index-hover hover"></i> -->
+              <i class="menu-icon default">
+                <img src="./assets/icon/results.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/results-hover.png" alt="">
+              </i>
+            </dt>
+            <dd>
+              战果
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+        <a href="./bayonet.html">
+          <li class="menu-item">
+            <dl>
+              <dt class="text-center">
+                <i class="menu-icon default"><img src="./assets/icon/video.png" alt=""></i>
+                <i class="menu-icon hover"><img src="./assets/icon/video-hover.png" alt=""></i>
+                <!--  <i class="icon icon-video default"></i>
+                <i class="icon icon-video-hover hover"></i> -->
+              </dt>
+              <dd>
+                卡口
+              </dd>
+            </dl>
+            <div class="bg"></div>
+          </li>
+        </a>
+        <li class="menu-item active">
+          <dl>
+            <dt class="text-center">
+              <!--   <i class="icon icon-compare default"></i>
+            <i class="icon icon-compare-hover hover"></i> -->
+              <i class="menu-icon default">
+                <img src="./assets/icon/compare.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/compare-hover.png" alt="">
+              </i>
+            </dt>
+            <dd>
+              对比
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <i class="menu-icon default">
+                <img src="./assets/icon/log.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/log-hover.png" alt="">
+              </i>
+              <!-- <i class="icon icon-log default"></i>
+              <i class="icon icon-log-hover hover"></i> -->
+            </dt>
+            <dd>
+              名单
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <i class="menu-icon default">
+                <img src="./assets/icon/arrangement.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/arrangement-hover.png" alt="">
+              </i>
+              <!--  <i class="icon icon-arrangement default"></i>
+             <i class="icon icon-arrangement-hover hover"></i> -->
+            </dt>
+            <dd>
+              布控
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <!--  <i class="icon icon-data default"></i>
+             <i class="icon icon-data-hover hover"></i> -->
+              <i class="menu-icon default">
+                <img src="./assets/icon/data.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/data-hover.png" alt="">
+              </i>
+            </dt>
+            <dd>
+              资料
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+        <li class="menu-item">
+          <dl>
+            <dt class="text-center">
+              <!-- <i class="icon icon-tool default"></i>
+              <i class="icon icon-tool-hover hover"></i> -->
+              <i class="menu-icon default">
+                <img src="./assets/icon/tool.png" alt="">
+              </i>
+              <i class="menu-icon hover">
+                <img src="./assets/icon/tool-hover.png" alt="">
+              </i>
+            </dt>
+            <dd>
+              系统
+            </dd>
+          </dl>
+          <div class="bg"></div>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="bg-content scrollbar">
+        <div class="module-compare">
+          <div class="tab-list js-tab-list">
+            <div class="tab-item active" data-target="one">1:1对比</div>
+            <div class="tab-item" data-target="more">N:N对比</div>
+          </div>
+          <div class="tab-content js-tab-content">
+            <div class="clearfix one" id="one">
+              <div class="one-left one-item bg-primary">
+                <i class="icon icon-camera-2"></i>
+              </div>
+              <div class="one-center one-item color-important">
+                98.88%
+              </div>
+              <div class="one-right one-item bg-primary">
+                <i class="icon icon-camera-2"></i>
+              </div>
+            </div>
+            <div id="more" class="hide more">
+              <div class="condition clearfix">
+                <div class="clearfix">
+                  <div class="form-element">
+                    <dl class="dl-inline bg-primary clearfix new">
+                      <dt class="text-right">
+                        <i class="icon icon-add"></i>
+                      </dt>
+                      <dd>
+                        点击新建任务
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="form-element">
+                    <dl class="dl-inline  clearfix">
+                      <dt class="text-right">
+                        <i class="icon icon-delete vertical-middle"></i>
+                      </dt>
+                      <dd>
+                        批量删除
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <div class="form-element clearfix">
+                    <dl class="dl-inline clearfix">
+                      <dt class="text-right">任务编号</dt>
+                      <dd>
+                        <input type="text" placeholder="任务编号" class="primary-bg">
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="form-element">
+                    <dl class="dl-inline clearfix">
+                      <dt class="text-right">任务名称</dt>
+                      <dd>
+                        <input type="text" placeholder="任务名称" class="primary-bg">
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="form-element">
+                    <dl class="dl-inline clearfix">
+                      <dt class="text-right">状态</dt>
+                      <dd class="text-center gender">
+                        <input type="text" placeholder="状态" class="primary-bg">
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="form-element btn-cnt">
+                    <dl class="dl-inline clearfix">
+                      <dt class="text-right"></dt>
+                      <dd>
+                        <button class="btn">搜索</button>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="tb-wraper">
+                <table class="tb">
+                  <thead>
+                    <tr>
+                      <th>
+                        <input type="checkbox" class="bg-primary">
+                      </th>
+                      <th>任务编号</th>
+                      <th>任务名称</th>
+                      <th>分析状态</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input type="checkbox" class="bg-primary">
+                      </td>
+                      <td>
+                        10103
+                      </td>
+                      <td>交叉比对</td>
+                      <td>
+                        <span class="color-important">正在分析</span>
+                      </td>
+                      <td>
+                        <div class="operation">
+                          <a href="#">
+                            <i class="icon icon-edit"></i>
+                            <span>编辑</span>
+                          </a>
+                          <a href="#">
+                            <i class="icon icon-delete-2"></i>
+                            <span>删除</span>
+                          </a>
+                          <a href="#">
+                            <i class="icon icon-view"></i>
+                            <span>查看</span>
+                          </a>
+                          <a href="#">
+                            <i class="icon icon-stop"></i>
+                            <span>暂停任务</span>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./assets/lib/jquery/jquery-1.9.1.js"></script>
+<script src="./assets/js/app.js"></script>
+
+</html>

@@ -100,6 +100,10 @@ select {
   vertical-align: top;
 }
 
+.vertical-middle {
+  vertical-align: middle;
+}
+
 .hide {
   display: none !important;
 }
@@ -143,27 +147,41 @@ select {
   height: 40px
 }
 
-.bg-primary{
+.bg {
+  /*background-color: #274a66;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*opacity: .6;*/
+  width: 100%;
+  height: 100%;
+  z-index: -9;
+}
+
+
+.bg-primary {
   background-color: #007ccd;
 }
 
-.color-primary{
+.color-primary {
   color: #007ccd;
 }
 
-.color-important{
+.color-important {
   color: #ff0000;
 }
 
+.bg-default,
 .defualt-bg {
   background: rgba(19, 58, 89, 0.3)!important;
 }
 
+.bg-primary,
 .primary-bg {
   background: rgba(19, 58, 89, 0.5)!important;
 }
 
-.bg-color{
+.bg-color {
   background-color: #61aae0;
 }
 
@@ -235,6 +253,7 @@ body {
 
 body {
   color: #fff;
+  font-size: 16px;
 }
 
 .container {
@@ -273,6 +292,11 @@ body {
   width: 100%;
   height: 100%;
   padding: 120px 0 0 132px;
+}
+
+.content-inner{
+  padding: 0 20px;
+  overflow: auto;
 }
 
 .bg-content {
@@ -416,6 +440,7 @@ li.menu-item:hover .default {
   display: none;
 }
 
+
 /*二级菜单*/
 
 .tab-inner {
@@ -449,7 +474,9 @@ li.menu-item:hover .default {
   cursor: default;
 }
 
+
 /*列表*/
+
 .tb-wraper {
   /*padding: 0 1rem;*/
 }
@@ -479,3 +506,21 @@ li.menu-item:hover .default {
   width: 100px;
   height: 100px;
 }
+
+/*表单*/
+.form-element{
+  float: left;
+  margin-right: 10px;
+}
+
+.form-element dl {
+  margin-bottom: 16px;
+}
+
+.form-element dt {
+  height: 40px;
+  line-height: 40px;
+  padding-right: 7px;
+}
+
+
