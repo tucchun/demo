@@ -74,6 +74,10 @@
   line-height: 176px;
 }
 
+.list-searchResult-item > .img > .icon{
+  vertical-align: middle;
+}
+
 .list-searchResult-item .bg {
   background-color: #274a66;
   opacity: .6;
@@ -81,10 +85,6 @@
 
 .list-searchResult-item > .img .bg {
   opacity: .2;
-}
-
-.list-searchResult-item > .img img {
-  vertical-align: middle;
 }
 
 .list-searchResult-item > .info {

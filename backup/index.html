@@ -2,29 +2,29 @@
 <html>
 
 <head>
-  <title>首页</title>
+  <title>Index</title>
+  <script type="text/javascript" src="./assets/lib/adaptive-master/js/adaptive.js"></script>
+  <script>
+  window['adaptive'].desinWidth = 1980; // 设计图宽度
+  window['adaptive'].baseFont = 20; // 没有缩放时的字体大小
+  // window['adaptive'].maxWidth = 1980; // 页面最大宽度 默认540
+  // 将1rem转换为像素值
+  // window['adaptive'].remToPx(1)
+  window['adaptive'].scaleType = 1;
+  window['adaptive'].init(); // 调用初始化方法
+  </script>
   <link rel="stylesheet" type="text/css" href="./assets/lib/normalize.css">
-  <link rel="stylesheet" type="text/css" href="./assets/css/common.css">
-  <link rel="stylesheet" type="text/css" href="./assets/sprite/sprite.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
   <div class="container">
-    <!-- <div class="bg-wrap"></div> -->
+    <div class="bg-wrap"></div>
     <div class="header">
-      <div class="header-left pull-left">
-        <i class="icon icon-login-logo"></i>
-      </div>
-      <div class="pull-left title">
-        人脸布控实战平台系统
-      </div>
-      <div class="pull-right userinfo">
-        <div class="pull-left">
-          你好，admin
-        </div>
-        <div class="person pull-left">
-          <img src="./assets/image/person.jpg" alt="">
-        </div>
+      <div class="header-left">
+        <i class="head-logo">
+          <img src="./assets/icon/logo.png" alt="">
+        </i>
       </div>
     </div>
     <div class="menu ">
@@ -47,25 +47,7 @@
           </dl>
           <div class="bg"></div>
         </li>
-        <li class="menu-item">
-          <dl>
-            <dt class="text-center">
-              <!-- <i class="icon icon-index default"></i>
-              <i class="icon icon-index-hover hover"></i> -->
-              <i class="menu-icon default">
-                <img src="./assets/icon/results.png" alt="">
-              </i>
-              <i class="menu-icon hover">
-                <img src="./assets/icon/results-hover.png" alt="">
-              </i>
-            </dt>
-            <dd>
-              战果
-            </dd>
-          </dl>
-          <div class="bg"></div>
-        </li>
-        <a href="./video.html">
+        <a href="./bayonet.html">
           <li class="menu-item">
             <dl>
               <dt class="text-center">
@@ -196,10 +178,140 @@
       </ul>
     </div>
     <div class="content">
-      <div class="bg-content"></div>
-      
+      <!-- <div class="module-index">
+        <div class="module-index-bundleA">
+          <dl>
+            <dt>累计检索</dt>
+            <dd>458,098,864,086</dd>
+          </dl>
+        </div>
+        <div class="module-index-bundleB">
+          <dl>
+            <dt class="clearfix">
+              <div class="pull-left">人像库</div>
+              <div class="pull-right">36个</div>
+            </dt>
+            <dd>
+              <div class="text-center">
+                <i class="menu-icon">
+                  <img src="./assets/icon/user-hover.png">
+                </i>
+              </div>
+              <div class="text-center">
+                500个
+              </div>
+            </dd>
+            <dd>
+              <div class="text-center">
+                <i class="menu-icon">
+                  <img src="./assets/icon/video-1.png">
+                </i>
+              </div>
+              <div class="text-center">
+                500个
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="module-index-bundleC">
+          <dl>
+            <dt class="clearfix">
+              <div class="pull-left">人像库</div>
+              <div class="pull-right">36个</div>
+            </dt>
+            <dd>
+              <div class="text-center">
+                <i class="menu-icon">
+                  <img src="./assets/icon/video-2.png">
+                </i>
+              </div>
+              <div class="text-center">
+                500个
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="module-index-bundleD clearfix">
+          <div class="pull-left text-center">
+            <dl>
+              <dt>
+                <i class="menu-icon">
+                  <img src="./assets/icon/video-1.png">
+                </i>
+              </dt>
+              <dd>人像库检查</dd>
+              <dd>646556256个</dd>
+            </dl>
+          </div>
+          <div class="pull-right text-center text-center">
+            <dl>
+              <dt>
+                <i class="menu-icon">
+                  <img src="./assets/icon/video-2.png">
+                </i>
+              </dt>
+              <dd>路人库检索</dd>
+              <dd>646556256个</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="module-index-bundleE text-center">
+          <h2 class="e-title">
+            当前使用用户总数：
+          </h2>
+          <ul class="e-total text-center">
+            <li>4</li>
+            <li>5</li>
+            <li>8</li>
+            <li>0</li>
+            <li>9</li>
+            <li>8</li>
+          </ul>
+        </div>
+        <div class="module-index-bundleF">
+          <div class="f-circle">
+            <dl>
+              <dt>
+                <i class="cirle-icon">
+                  <img src="./assets/icon/circle.png" alt="">
+                </i>
+                <span class="point">97%</span>
+              </dt>
+              <dd class="text-center">首位命中率</dd>
+            </dl>
+          </div>
+          <div class="f-circle">
+            <dl>
+              <dt>
+                <i class="cirle-icon">
+                  <img src="./assets/icon/circle-2.png" alt="">
+                </i>
+                <span class="point">97%</span>
+              </dt>
+              <dd class="text-center">前十命中率</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="module-index-bundleG">
+          <div class="text-center g-top clearfix">
+            <div class="pull-left g-top-item">
+              <div class="">一次性任务</div>
+              <div>12,222个</div>
+            </div>
+            <div class="pull-right g-top-item">
+              <div>持续性任务</div>
+              <div>12,222个</div>
+            </div>
+          </div>
+          <div class="text-center g-bottom">
+            今天新增结果10个
+          </div>
+        </div>
+      </div> -->
     </div>
   </div>
 </body>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0"></script> -->
 <script type="text/javascript" src="./assets/lib/jquery/jquery-1.9.1.js"></script>
+
 </html>
